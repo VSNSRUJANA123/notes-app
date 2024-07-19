@@ -1,0 +1,194 @@
+/* frontend/css/styles.css */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+.title {
+  color: #6aa0ff;
+}
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navbar div button {
+  background-color: #6aa0ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+#login-btn {
+  border: #6aa0ff 1px solid;
+  color: #6aa0ff;
+  background: transparent;
+}
+.login-btn-container {
+  padding: 10px;
+}
+.profile-section {
+  text-align: center;
+}
+.profile {
+  width: 40px;
+  border-radius: 50%;
+}
+.username {
+  padding: 0;
+  margin: 0;
+  color: #6aa0ff;
+}
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+header button {
+  margin: 5px;
+}
+
+#note-form {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#note-form input,
+#note-form textarea,
+#note-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.note {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer button {
+  padding: 10px 20px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.login-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.login-form button {
+  background: #6aa0ff;
+  border: #6aa0ff 1px solid;
+  color: white;
+  width: 120px;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 10px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#search {
+  margin: 15px;
+  padding: 7px;
+  margin-left: 20px;
+}
+#note-creation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+#note-creation input {
+  margin-bottom: 10px;
+  padding: 7px;
+}
+#note-creation #color {
+  padding: 0;
+}
+#note-creation textarea {
+  margin-bottom: 10px;
+}
+#save-note {
+  width: 120px;
+  background-color: #6aa0ff;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 7px;
+}
